@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "arithmetic_quiz_categories",
+  "info": {
+    "singularName": "arithmetic-quiz-category",
+    "pluralName": "arithmetic-quiz-categories",
+    "displayName": "Arithmetic quiz category",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "arithmetic_quizzes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::arithmetic-quizz.arithmetic-quizz",
+      "mappedBy": "arithmetic_quiz_category"
+    }
+  }
+}

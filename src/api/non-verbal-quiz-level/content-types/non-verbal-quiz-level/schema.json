@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "non_verbal_quiz_levels",
+  "info": {
+    "singularName": "non-verbal-quiz-level",
+    "pluralName": "non-verbal-quiz-levels",
+    "displayName": "Non verbal quiz level"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "level": {
+      "type": "integer"
+    }
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "kind": "collectionType",
+  "collectionName": "non_verbal_quizzes",
+  "info": {
+    "singularName": "non-verbal-quizz",
+    "pluralName": "non-verbal-quizzes",
+    "displayName": "Non Verbal Quizz",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "description": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "qna": {
+      "displayName": "qna",
+      "type": "component",
+      "repeatable": true,
+      "component": "quizz.qna",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "slug": {
+      "type": "string",
+      "unique": true,
+      "required": true,
+      "regex": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "quizExplainerVideo": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "non_verbal_quiz_category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::non-verbal-quiz-category.non-verbal-quiz-category",
+      "inversedBy": "non_verbal_quizzes"
+    }
+  }
+}

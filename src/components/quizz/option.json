@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_quizz_options",
+  "info": {
+    "displayName": "option",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "correct": {
+      "type": "boolean",
+      "required": true
+    }
+  }
+}

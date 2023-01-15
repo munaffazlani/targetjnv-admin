@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_quizz_qnas",
+  "info": {
+    "displayName": "qna",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "question": {
+      "type": "string"
+    },
+    "questionImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "options": {
+      "displayName": "option",
+      "type": "component",
+      "repeatable": true,
+      "component": "quizz.option"
+    },
+    "qnaExplainerVideo": {
+      "type": "string"
+    }
+  }
+}

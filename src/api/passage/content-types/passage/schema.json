@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "passages",
+  "info": {
+    "singularName": "passage",
+    "pluralName": "passages",
+    "displayName": "passage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "passage": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "qna": {
+      "type": "component",
+      "repeatable": true,
+      "component": "quizz.qna",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}
