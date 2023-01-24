@@ -28,6 +28,9 @@
     },
     "qnaExplainerVideo": {
       "type": "string"
+    },
+    "ans": {
+      "type": "integer"
     }
   }
 }
