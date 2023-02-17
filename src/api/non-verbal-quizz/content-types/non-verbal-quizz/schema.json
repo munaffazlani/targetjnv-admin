@@ -83,6 +83,12 @@
       "relation": "manyToOne",
       "target": "api::non-verbal-quiz-category.non-verbal-quiz-category",
       "inversedBy": "non_verbal_quizzes"
+    },
+    "non_verbal_quiz_level": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::non-verbal-quiz-level.non-verbal-quiz-level",
+      "inversedBy": "non_verbal_quizzes"
     }
   }
 }

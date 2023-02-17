@@ -4,7 +4,8 @@
   "info": {
     "singularName": "non-verbal-quiz-level",
     "pluralName": "non-verbal-quiz-levels",
-    "displayName": "Non verbal quiz level"
+    "displayName": "Non verbal quiz level",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -13,6 +14,12 @@
   "attributes": {
     "level": {
       "type": "integer"
+    },
+    "non_verbal_quizzes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::non-verbal-quizz.non-verbal-quizz",
+      "mappedBy": "non_verbal_quiz_level"
     }
   }
 }
