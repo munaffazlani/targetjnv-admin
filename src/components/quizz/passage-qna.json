@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_quizz_passage_qnas",
+  "info": {
+    "displayName": "passageQna"
+  },
+  "options": {},
+  "attributes": {
+    "question": {
+      "type": "string"
+    },
+    "options": {
+      "type": "component",
+      "repeatable": true,
+      "component": "quizz.passage-options"
+    }
+  }
+}

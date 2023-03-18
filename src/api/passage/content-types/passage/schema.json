@@ -4,7 +4,8 @@
   "info": {
     "singularName": "passage",
     "pluralName": "passages",
-    "displayName": "passage"
+    "displayName": "passage",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -26,12 +27,12 @@
     "qna": {
       "type": "component",
       "repeatable": true,
-      "component": "quizz.qna",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
-      }
+      },
+      "component": "quizz.passage-qna"
     }
   }
 }

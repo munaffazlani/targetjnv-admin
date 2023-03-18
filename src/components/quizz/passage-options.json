@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_quizz_passage_options",
+  "info": {
+    "displayName": "passageOptions",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "option": {
+      "type": "string"
+    },
+    "correct": {
+      "type": "boolean"
+    }
+  }
+}
