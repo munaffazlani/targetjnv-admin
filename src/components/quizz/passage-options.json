@@ -10,7 +10,8 @@
       "type": "string"
     },
     "correct": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
     }
   }
 }
